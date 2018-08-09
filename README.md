@@ -4,6 +4,40 @@
 page下面可以放置多个project，每个project一个文件
 
 
+## history模式
+
+```
+// handle fallback for HTML5 history API
+// app.use(require('connect-history-api-fallback')())
+let history = require('connect-history-api-fallback');
+app.use(history({
+  verbose: true,
+  rewrites: [
+    { from: '/demo', to: '/demo/index.html'}
+  ],
+  htmlAcceptHeaders: ['text/html', 'application/xhtml+xml'],
+  disableDotRule: true
+}));
+```
+
+```
+mode: 'history',
+  base: '/demo/',
+  routes: [
+    {
+      path: '/',
+      name: 'Demo',
+      component: Demo
+    },
+    {
+      path: '/text',
+      name: 'text',
+      component: Text
+    }
+  ]
+```
+
+
 ## Build Setup
 
 ``` bash
