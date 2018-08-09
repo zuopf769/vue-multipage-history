@@ -40,6 +40,14 @@ mode: 'history',
   ]
 ```
 
+## 多页面支持
+
+page下面可以放置多个project，每个project一个文件
+
+npm run dev --project=xxx
+
+npm run build --project=xx
+
 
 ## Build Setup
 
