@@ -1,0 +1,11 @@
+<style scoped>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<template>
+  <div class="wrapper"><h1>矿池活动页面欢迎您！</h1></div>
+</template>
+<script>
+</script>

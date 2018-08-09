@@ -1,0 +1,27 @@
+// The Vue build version to load with the `import` command
+import Vue from 'vue'
+import vuex from 'vuex'
+import router from '@/router/{{=it.name}}'
+import {{=it.compname}} from './{{=it.name}}'
+import VueScroller from 'vue-scroller'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+Vue.use(VueScroller);
+Vue.config.productionTip = false
+
+//配置修改标题的钩子
+Vue.directive('title', {
+  inserted: function (el, binding) {
+    document.title = el.dataset.title
+  }
+})
+
+/**
+ * 初始化vue对象
+ */
+new Vue({
+  el: '#app',         //根节点元素
+  router,             //路由信息
+  // store,              //使用store存储管理数据
+  template: '<{{=it.compname}}/>', //模版信息
+  components: { {{=it.compname}} } //组件信息
+})
