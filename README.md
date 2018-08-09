@@ -6,6 +6,8 @@ page下面可以放置多个project，每个project一个文件
 
 ## history模式
 
++ /demo 类似模块名
+
 ```
 // handle fallback for HTML5 history API
 // app.use(require('connect-history-api-fallback')())
@@ -20,6 +22,7 @@ app.use(history({
 }));
 ```
 
++ history模式最好用全路径
 ```
 mode: 'history',
   base: '/demo/',
