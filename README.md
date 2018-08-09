@@ -1,6 +1,8 @@
-# huobi-pool-campaign
+# vue-multipage-history
 
 > activityPage
+page下面可以放置多个project，每个project一个文件
+
 
 ## Build Setup
 
@@ -9,10 +11,10 @@
 npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+npm run dev --project=xxx
 
 # build for production with minification
-npm run build
+npm run build --project=xx
 
 # build for production and view the bundle analyzer report
 npm run build --report
